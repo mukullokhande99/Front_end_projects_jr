@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+</head>
+<body class="given_form" style="margin: auto; background: violet; line-height: 30px; text-decoration-style: solid; background: ghostwhite; justify-content: center; display: flex; flex-wrap: wrap;">
+
+	
+	<fieldset style="width:800px; border-radius: 15px; background-color: MediumSeaGreen ; ">
+	<legend style="background-color:SpringGreen;color:Navy;text-shadow: 2px 2px orange;font-size: 50px; padding:10px ;text-shadow: 5px; border-radius: 10px; border: 3px solid darkslateblue; " >Memories </legend>
+
+
+<p style="text-align: center;"> <img src="images/MukulLogo.png" ></p>
+<div style="float:left;width:50%;">
+	<form action="">
+
+		<section class="memories">
+      			<div style="float:left;width:50%; margin: 25px 140px;">
+      			
+      			<script>
+
+					var i = 0; 			// Start Point
+					var images = [];	// Images Array
+					var time = 500;	// Time Between Switch
+						 
+					// Image List
+					images[0] = "images/family.jpg";
+					images[1] = "images/abad.jpg";
+					images[2] = "images/bday.jpg";
+					images[3] = "images/bday2.jpg";
+					images[4] = "images/btechsem1end.jpg";
+					images[5] = "images/cityvisit.jpg";
+					images[6] = "images/clg.jpeg";
+					images[7] = "images/day.jpg";
+					images[8] = "images/12pic.jpg";
+					images[9] = "images/formalday.jpg";
+					images[10] = "images/fybday.jpg";
+					images[11] = "images/gpproj.jpg";
+					images[12] = "images/grpend.jpg";
+					images[13] = "images/hostelfreshers.jpg";
+					images[14] = "images/ivmysore.jpg";
+					images[15] = "images/ivmysore2.jpg";
+					images[16] = "images/ivreg.jpg";
+					images[17] = "images/lastday.jpg";
+					images[18] = "images/micro.jpg";
+					images[19] = "images/movie.jpg";
+					images[20] = "images/pragyaafood.jpg";
+					images[21] = "images/pragyaaprc.jpg";
+					images[22] = "images/projcelb.jpg";
+					images[23] = "images/project.jpg";
+					images[24] = "images/projend.jpg";
+					images[25] = "images/projnight.jpg";
+					images[26] = "images/seminar.jpg";
+					images[27] = "images/syfd.jpg";
+					images[28] = "images/syindvisit.jpg";
+					images[29] = "images/tejbday.jpg";
+					images[30] = "images/tybday.jpg";
+					images[31] = "images/vlsifday.jpg";
+
+
+
+
+
+
+
+					
+
+					// Change Image
+					function changeImg(){
+						document.slide.src = images[i];
+
+						// Check If Index Is Under Max
+						if(i < images.length - 1){
+						  // Add 1 to Index
+						  i++; 
+						} else { 
+							// Reset Back To O
+							i = 0;
+						}
+
+						// Run function every x seconds
+						setTimeout("changeImg()", time);
+					}
+
+					// Run function when page loads
+					window.onload=changeImg;
+
+					</script>
+
+					<img name="slide" width="600px" height="450px" style=" border-radius: 25px; opacity: 1; 
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+      		</section>
+      		</div>
+		 
+		
+			
+	</form>
+</div>
+
+
+
+
+
+
+
+
+</fieldset>
+
+
+</body>
+</html>
+
